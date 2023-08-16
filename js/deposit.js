@@ -6,8 +6,10 @@ document.getElementById('deposit-button').addEventListener('click',function(){
     const depositInput = Number(document.getElementById('deposit-input').value);
 
     
-    deposit.innerText = depositValue + depositInput ;
-    balance.innerText = balanceValue + depositInput ;
+    const depositTofixed = depositValue + depositInput ;
+    const balanceTofixed = balanceValue + depositInput ;
+     deposit.innerText = depositTofixed.toFixed(2);
+     balance.innerText = balanceTofixed.toFixed(2);
 
     document.getElementById('deposit-input').value = '';
 

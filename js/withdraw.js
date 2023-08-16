@@ -12,8 +12,11 @@ document.getElementById('withdraw-button').addEventListener('click',function(){
         document.getElementById('withdraw-input').value = '';
         return ;
     }
-    withdraw.innerText = withdrawValue + withdrawInput ;
-    balance.innerText = balanceValue - withdrawInput ;
+    const withdrawTofixed = withdrawValue + withdrawInput;
+    const balanceTofixed = balanceValue - withdrawInput ;
+    withdraw.innerText = withdrawTofixed.toFixed(2) ;
+    balance.innerText = balanceTofixed.toFixed(2) ;
+
     document.getElementById('withdraw-input').value = '';
 
     
