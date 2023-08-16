@@ -11,6 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundColor: {
+        'custom-white': '#3490dc', // Replace with your desired color value
+      },
+          }
+        }
+      }
+    </script>
     <!-- Tailwind css and Daisyui link -->
 
     <link
@@ -45,14 +56,14 @@
            
         </section>
         <section class=" grid lg:grid-cols-2 mx-auto gap-10  w-10/12 lg:h-[30vh]">
-              <div class="p-16 bg-yellow-500 text-white rounded ">
+              <div class=" p-5 md:p-16 bg-yellow-500 text-white rounded ">
                 <h1 class="text-4xl mb-4 ">Deposit</h1>
-                <input type="number" placeholder="$Enter amount " class="input input-bordered text-black input-info lg:w-2/4  block " id="deposit-input" />
+                <input type="number" placeholder="$Enter amount " class="input input-bordered w-full text-black input-info lg:w-2/4  block " id="deposit-input" />
                 <button class="btn  btn-primary text-white mt-5" id="deposit-button">Deposit</button>
               </div>
-              <div class="p-16 bg-orange-500 text-white rounded ">
+              <div class=" p-5 md:p-16 bg-orange-500 text-white rounded ">
                 <h1 class="text-4xl mb-4 ">Withdraw</h1>
-                <input type="number" placeholder="$Enter amount " class="input input-bordered text-black input-info lg:w-2/4  block " id="withdraw-input"/>
+                <input type="number" placeholder="$Enter amount " class="input input-bordered w-full text-black input-info lg:w-2/4  block " id="withdraw-input"/>
                 <button class="btn btn-active btn-success text-white mt-5" id="withdraw-button">Withdraw</button>
               </div>
               
