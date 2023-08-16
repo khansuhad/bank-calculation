@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <!-- font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- Tailwind css and Daisyui link -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body style="font-family: 'lato',Arial, Helvetica, sans-serif;">
+    <header class="bg-sky-900 rounded h-[16vh]">
+        <h1 class="text-5xl text-sky-200 text-center py-8">See more on <span class="font-medium text-sky-400"> Bank </span>, Please Login</h1>
+    </header>
+    <main class=" h-[80vh]  w-screen flex justify-center  items-center bg-sky-100">
+       <section class="bg-sky-200 p-10 rounded">
+        <label for="email" class="text-3xl">Email or Phone</label><br>
+        <input type="email" id="email-input"placeholder="Type here" class="input input-bordered input-info mt-3 lg:w-96" /><br><br>
+        <label for="password" class=" text-3xl">Password</label> <br>
+        <input type="password" id="password-input" placeholder="Type here" class="input input-bordered input-info  lg:w-96 mt-3 " /> <br>
+        <button class="btn btn-info mt-5" id="login-button">Login</button>
+       </section>
+    </main>
+    <footer class="h-[4vh] bg-sky-300 flex justify-center items-center">
+        <h1 class="text-center font-medium text-1xl">Copyright @ reserved by <a href="https://www.facebook.com/profile.php?id=100092229053409" target="_blank">khan suhad</a></h1>
+    </footer>
+    <script src="js/login.js"></script>
+  </body>
+</html>
